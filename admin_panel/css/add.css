@@ -1,0 +1,35 @@
+.add_form>input[type=number],
+.add_form>input[type=text] {
+    padding: 10px 0px 10px 45px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: #dde1e7;
+    color: #595959;
+    border-radius: 25px;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 5px #9396a0,
+        inset -2px -2px 5px #9396a0;
+}
+
+.add_form>input[type=number]:focus,
+.add_form>input[type=text]:focus {
+    box-shadow: inset 2px 2px 5px #9396a0,
+        inset -2px -2px 5px #9396a0;
+}
+
+.add_form>input[type=submit] {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 25px;
+    font-weight: 600;
+    background: #dde1e7;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #595959;
+    box-shadow: 2px 2px 5px #BABECC,
+        -5px -5px 10px #ffffff73;
+}

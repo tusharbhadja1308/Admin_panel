@@ -1,0 +1,97 @@
+#table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    /* border-radius: 10px; */
+    box-shadow: 3px 3px 10px 5px rgb(100, 100, 100);
+}
+
+#table td,
+#table th {
+    /* border: 1px solid #ddd; */
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table tr:nth-child(odd) {
+    background-color: #59595919;
+}
+
+
+#table tr:hover {
+    background-color: #c5c5c5;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    /* background-color: #04AA6D; */
+    background-color: #595959;
+    color: white;
+}
+
+
+
+
+
+table#table {
+    /* Change these properties */
+    /* --border: 1px solid black; */
+    border-radius: 10px;
+
+    /* Don't change these properties */
+    border-spacing: 0;
+    border-collapse: separate;
+    border: var(--border);
+    overflow: hidden;
+}
+
+/* Apply a border to the right of all but the last column */
+table#table th:not(:last-child),
+table#table td:not(:last-child) {
+    border-right: var(--border);
+}
+
+/* Apply a border to the bottom of all but the last row */
+table#table>thead>tr:not(:last-child)>th,
+table#table>thead>tr:not(:last-child)>td,
+table#table>tbody>tr:not(:last-child)>th,
+table#table>tbody>tr:not(:last-child)>td,
+table#table>tfoot>tr:not(:last-child)>th,
+table#table>tfoot>tr:not(:last-child)>td,
+table#table>tr:not(:last-child)>td,
+table#table>tr:not(:last-child)>th,
+table#table>thead:not(:last-child),
+table#table>tbody:not(:last-child),
+table#table>tfoot:not(:last-child) {
+    border-bottom: var(--border);
+}
+
+
+#table td>a {
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin-right: 10px;
+    font-weight: bold;
+    background: #dde1e7;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #595959;
+    box-shadow: 0px 0px 5px 3px #BABECC;
+}
+
+#table td>a:focus {
+    color: #3498db;
+    box-shadow: inset 2px 2px 5px #BABECC,
+        inset -5px -5px 10px #ffffff73;
+}
